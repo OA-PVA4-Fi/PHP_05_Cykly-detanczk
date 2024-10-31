@@ -16,7 +16,14 @@ $cars = array (
 	array("Saab",5,2),
 	array("Land Rover",17,15)
 );
+$totalSold = 0;
+$totalInStock = 0;
 
-//reseni
+foreach ($cars as $car) {
+    $totalSold += $car[1];
+    $totalInStock += $car[2];
+}
 
+echo "Celkový počet prodaných aut: " . $totalSold . "\n";
+echo "<br>Celkový počet aut na skladě: " . $totalInStock . "\n";
 ?>

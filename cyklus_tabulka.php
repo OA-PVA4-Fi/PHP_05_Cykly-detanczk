@@ -39,5 +39,18 @@ $city = array(
 );
 
 //reseni
+ksort($city);
+echo "<table border='1' cellpadding='5'>";
+echo "<tr>";
+$counter = 1;
+foreach ($city as $country => $capital) {
+    echo "<td>$counter. $country - $capital</td>";
+    if ($counter % 3 == 0) {
+        echo "</tr><tr>";
+    }
+    $counter++;
+}
+echo "</tr>";
+echo "</table>";
 
 ?>
