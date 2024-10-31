@@ -74,10 +74,13 @@ $bitcoinPrices = [
     '2024-09' => 63339.20,
     '2024-10' => 64171.40
 ];
-
+$total = 0;
 // reseni:
+foreach ($bitcoinPrices as $btc) {
+    $total += (float) $btc;
+}
 
-
+echo "kolik jsme koupili celkem: " . $btc . "\n";
 
 
 
